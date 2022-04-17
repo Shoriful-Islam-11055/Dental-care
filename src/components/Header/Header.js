@@ -51,12 +51,15 @@ const Header = () => {
                 <Link className="nav-link" to="/blog">
                   BLOG
                 </Link>
+                <Link className="nav-link" to="/specialOffer">
+                  SPECIAL OFFER
+                </Link>
                 <Link className="nav-link" to="/contacts">
                   CONTACTS
                 </Link>
                 {/* <Link className="nav-link" to="/about">
-                  {user && <p>{user?.email}</p>}
-                </Link> */}
+                        {user && <p>{user?.email}</p>}
+                    </Link> */}
               </div>
             </Nav>
             <Nav className="ms-auto">

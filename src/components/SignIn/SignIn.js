@@ -18,7 +18,7 @@ const SignIn = () => {
     useSignInWithEmailAndPassword(auth);
 
   const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
+  let from = location?.state?.from?.pathname || "/";
 
   const handleEmailBlur = (event) => {
     setEmail(event.target.value);
@@ -70,7 +70,7 @@ const SignIn = () => {
         <Form.Group className="mb-3" controlId="validationCustom02">
           <Form.Label>Password</Form.Label>
           <Form.Control
-            // onBlur={handlePasswordBlur}
+            onBlur={handlePasswordBlur}
             required
             type="password"
             placeholder="Enter password"
