@@ -4,7 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import bandLogo from '../../images/logos/dental-logo-design-.jpg'
+import bandLogo from '../../images/logos/nav-logoPNG.PNG'
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -21,7 +21,7 @@ const Header = () => {
             <img
               alt=""
               src={bandLogo}
-              width="50"
+              width="150"
               height="50"
               className="d-inline-block align-top me-2 rounded-3"
             />{" "}
@@ -46,14 +46,11 @@ const Header = () => {
                 <Link className="nav-link" to="/about">
                   ABOUT ME
                 </Link>
-                <Link className="nav-link" to="/gallery">
-                  GALLERY
+                <Link className="nav-link" to="/appointment">
+                  APPOINTMENT
                 </Link>
                 <Link className="nav-link" to="/blog">
                   BLOG
-                </Link>
-                <Link className="nav-link" to="/specialOffer">
-                  SPECIAL OFFER
                 </Link>
                 <Link className="nav-link" to="/contacts">
                   CONTACTS
