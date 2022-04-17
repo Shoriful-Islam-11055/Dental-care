@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import logo from "../../images/hr-line.PNG";
@@ -8,7 +11,6 @@ import googleIcon from "../../images/logos/google-icon.png";
 import "./SignIn.css";
 
 const SignIn = () => {
-
   const [validated, setValidated] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,6 +18,8 @@ const SignIn = () => {
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
+  const [signInWithGoogle] = useSignInWithGoogle(auth);
 
   const location = useLocation();
   let from = location?.state?.from?.pathname || "/";
@@ -95,7 +99,11 @@ const SignIn = () => {
         <img className="img-or" src={logo} alt="" />
 
         <div className="d-grid gap-2">
-          <Button variant="outline-dark fw-bold" size="lg">
+          <Button
+            onClick={() => signInWithGoogle()}
+            variant="outline-dark fw-bold"
+            size="lg"
+          >
             <span className="p-2">
               <img src={googleIcon} alt="" />
             </span>

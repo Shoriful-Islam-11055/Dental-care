@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/hr-line.PNG";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useCreateUserWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import googleIcon from "../../images/logos/google-icon.png";
 
@@ -16,6 +19,7 @@ const SignUp = () => {
 
   const [createUserWithEmailAndPassword, user] =
     useCreateUserWithEmailAndPassword(auth);
+  const [signInWithGoogle] = useSignInWithGoogle(auth);
 
   const handleEmailBlur = (event) => {
     setEmail(event.target.value);
@@ -124,7 +128,11 @@ const SignUp = () => {
         <img className="img-or" src={logo} alt="" />
 
         <div className="d-grid gap-2">
-          <Button variant="outline-dark fw-bold" size="lg">
+          <Button
+            onClick={() => signInWithGoogle()}
+            variant="outline-dark fw-bold"
+            size="lg"
+          >
             <span className="p-2">
               <img src={googleIcon} alt="" />
             </span>
