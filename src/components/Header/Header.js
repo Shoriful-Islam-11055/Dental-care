@@ -52,11 +52,11 @@ const Header = () => {
             </Nav>
             <Nav className="ms-auto">
               <div className="navbar-nav">
-                <Link className="nav-link" to="/register">
+                <Link className="nav-link" to="/signUp">
                   <Button variant="outline-info">SIGN UP</Button>
                 </Link>
-                <Link className="nav-link" to="/login">
-                  <Button variant="outline-info">LOGIN</Button>
+                <Link className="nav-link" to="/signIn">
+                  <Button variant="outline-info">SIGN IN</Button>
                 </Link>
               </div>
             </Nav>
