@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+.review-page-title{
+    text-decoration: underline;
+    font-family: 'Goblin One', cursive;
+    color: rgb(228, 167, 11);
+}
+.reviews-container{
+     margin-top: 100px; 
+}
+.review-card{
+    background-color: rgb(237, 240, 242);
+}
