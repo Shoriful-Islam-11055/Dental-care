@@ -4,8 +4,7 @@ import Banner1 from "../../../images/banner/banner1.jpg";
 import Banner2 from "../../../images/banner/banner2.jpg";
 import Banner3 from "../../../images/banner/banner3.jpg";
 import Banner4 from "../../../images/banner/banner4.jpg";
-import './Banner.css'
-
+import "./Banner.css";
 
 const Banner = () => {
   return (
@@ -22,10 +21,7 @@ const Banner = () => {
                     alt="First slide"
                   />
                   <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
+                    <h1 className="text-warning">More than 10 years of Experience</h1>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -36,10 +32,7 @@ const Banner = () => {
                   />
 
                   <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <h1 className="text-warning">More than 5000 Satisfied patents</h1>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -50,11 +43,7 @@ const Banner = () => {
                   />
 
                   <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
+                    <h1 className="text-warning">More then 14 years of implant practice Experience</h1>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -65,11 +54,7 @@ const Banner = () => {
                   />
 
                   <Carousel.Caption>
-                    <h3>Fourth slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
+                    <h1 className="text-warning">More than 2000 successful implant surgery</h1>
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>

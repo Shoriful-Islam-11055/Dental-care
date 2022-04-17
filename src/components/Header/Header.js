@@ -4,6 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import bandLogo from '../../images/logos/dental-logo-design-.jpg'
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -14,15 +15,15 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">
             <img
               alt=""
-              src=""
-              width="100"
-              height="60"
-              className="d-inline-block align-top me-2"
+              src={bandLogo}
+              width="50"
+              height="50"
+              className="d-inline-block align-top me-2 rounded-3"
             />{" "}
             <img
               alt=""
