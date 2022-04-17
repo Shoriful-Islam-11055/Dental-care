@@ -118,7 +118,7 @@ const SignUp = () => {
         <p className="text-center">
           Already have an account?{" "}
           <Link className="text-decoration-none" to="/signIn">
-            Login
+            Sign-In
           </Link>
         </p>
         <img className="img-or" src={logo} alt="" />
@@ -126,7 +126,7 @@ const SignUp = () => {
         <div className="d-grid gap-2">
           <Button variant="outline-dark fw-bold" size="lg">
             <span className="p-2">
-              <img  src={googleIcon} alt="" />
+              <img src={googleIcon} alt="" />
             </span>
             Continue with google
           </Button>

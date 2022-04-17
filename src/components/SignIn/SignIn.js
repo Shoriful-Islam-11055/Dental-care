@@ -4,10 +4,11 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import logo from "../../images/hr-line.PNG";
-import googleIcon from '../../images/logos/google-icon.png'
-import './SignIn.css'
+import googleIcon from "../../images/logos/google-icon.png";
+import "./SignIn.css";
 
 const SignIn = () => {
+
   const [validated, setValidated] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -51,9 +52,7 @@ const SignIn = () => {
         className="form-area shadow-lg"
       >
         <h3 className="text-center">Sign In</h3>
-        <p className="text-center fs-1 font-monospace">
-         
-        </p>
+        <p className="text-center fs-1 font-monospace"></p>
         <Form.Group className="mb-3" controlId="validationCustom01">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -88,8 +87,8 @@ const SignIn = () => {
         </div>
         <p className="text-center">
           Don't have account?{" "}
-          <Link className="text-decoration-none" to="/register">
-            Create a new account
+          <Link className="text-decoration-none" to="/signUp">
+            Create an account
           </Link>
         </p>
         {loading && <p>Loading....</p>}
@@ -98,7 +97,7 @@ const SignIn = () => {
         <div className="d-grid gap-2">
           <Button variant="outline-dark fw-bold" size="lg">
             <span className="p-2">
-             <img src={googleIcon} alt="" />
+              <img src={googleIcon} alt="" />
             </span>
             Continue with google
           </Button>
