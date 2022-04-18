@@ -1,6 +1,5 @@
 import React from "react";
 import errorImage from '../../images/others/error.gif'
-import Footer from "../Footer/Footer";
 
 const NotFound = () => {
   return (
@@ -11,7 +10,6 @@ const NotFound = () => {
           <h5 className = "card-title title-cart display-1">404</h5>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };
