@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+.title-cart{
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Goblin One', cursive;
+    color: rgb(228, 167, 11);
+}
+.care-text{
+    margin-left: 40px;
+}
+.profile{
+    height: 250px;
+}
+
 .carousal-card{
     border: none;
 }
-/* .banner-contain{
-    margin-top: 86px;
-} */

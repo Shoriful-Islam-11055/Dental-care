@@ -5,6 +5,7 @@ import Banner2 from "../../../images/banner/banner2.jpg";
 import Banner3 from "../../../images/banner/banner3.jpg";
 import Banner4 from "../../../images/banner/banner4.jpg";
 import Banner5 from "../../../images/banner/banner5.jpg";
+import dentist from "../../../images/others/dentist1.jpg";
 import "./Banner.css";
 
 const Banner = () => {
@@ -22,7 +23,9 @@ const Banner = () => {
                     alt="First slide"
                   />
                   <Carousel.Caption>
-                    <h1 className="text-warning">More than 10 years of Experience</h1>
+                    <h1 className="text-warning">
+                      More than 10 years of Experience
+                    </h1>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -33,7 +36,9 @@ const Banner = () => {
                   />
 
                   <Carousel.Caption>
-                    <h1 className="text-warning">More than 5000 Satisfied patents</h1>
+                    <h1 className="text-warning">
+                      More than 5000 Satisfied patents
+                    </h1>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -44,7 +49,9 @@ const Banner = () => {
                   />
 
                   <Carousel.Caption>
-                    <h1 className="text-warning">More then 14 years of implant practice Experience</h1>
+                    <h1 className="text-warning">
+                      More then 14 years of implant practice Experience
+                    </h1>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -55,7 +62,9 @@ const Banner = () => {
                   />
 
                   <Carousel.Caption>
-                    <h1 className="text-warning">More than 2000 successful implant surgery</h1>
+                    <h1 className="text-warning">
+                      More than 2000 successful implant surgery
+                    </h1>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -66,22 +75,38 @@ const Banner = () => {
                   />
 
                   <Carousel.Caption>
-                    <h1 className="text-warning">More than 2000 successful Wisdom Tooth Surgery</h1>
+                    <h1 className="text-warning">
+                      More than 2000 successful Wisdom Tooth Surgery
+                    </h1>
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
             </div>
             <div className="col-md-4">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </p>
+                <h2 className="card-title title-cart text-center py-2">
+                  HAPPY SMILE <br />
+                  <span className="care-text">DENTAL CARE</span>
+                </h2>
+                <div>
+                  <div className="card border-0">
+                    <img src={dentist} className="card-img-top profile" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title">
+                        Assoc. Prof. Dr. Rabiul Islam
+                      </h5>
+                      <p className="card-text">
+                        Ph.D. (Periodontal Plastic Surgery) Tokyo, Japan M.S.
+                        (Oral & Maxillofacial Surgery/Medicine) Korea <br />
+                        B.D.S. (Dhaka Dental College & Hospital) Dhaka <br />
+                        FIAOO (UK), FICD (USA), Postdoc (Australia) <br />
+                        Delta Medical College & Hospital Dental Unit <br />
+                        Periodontal Plastic & Maxillofacial Surgeon <br />
+                        Bangladesh Medical & Dental Council Reg.No.871
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
