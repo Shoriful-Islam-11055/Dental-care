@@ -1,0 +1,12 @@
+.from-container{
+    margin-top: 90px;
+    background-color:rgb(248, 242, 242);
+}
+
+.form-area-appointment{
+    width: 50%;
+    margin: auto;
+    background-color: rgb(255, 255, 255); 
+    padding: 25px; 
+   
+}
