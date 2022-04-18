@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import useServices from '../hooks/useServices';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import Banner from '../SignIn/Banner/Banner';
@@ -22,6 +23,7 @@ const Home = () => {
                     </div>
                    {/* <Link  to="/review">See All Review</Link> */}
                 </section>
+                <Footer></Footer>
         </div>
     );
 };
