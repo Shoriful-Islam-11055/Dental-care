@@ -4,7 +4,7 @@ import ServiceCard from "../ServiceCard/ServiceCard";
 import './Services.css'
 
 const Services = () => {
-const [services, setServices] = useServices();
+const [services] = useServices();
   return (
     <div className="reviews-container mb-5">
       <h2 className="review-page-title text-center">MY ALL SERVICES</h2>

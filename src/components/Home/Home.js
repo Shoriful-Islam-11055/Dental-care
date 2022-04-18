@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import useServices from '../hooks/useServices';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import Banner from '../SignIn/Banner/Banner';

@@ -4,6 +4,7 @@ import Banner1 from "../../../images/banner/banner1.jpg";
 import Banner2 from "../../../images/banner/banner2.jpg";
 import Banner3 from "../../../images/banner/banner3.jpg";
 import Banner4 from "../../../images/banner/banner4.jpg";
+import Banner5 from "../../../images/banner/banner5.jpg";
 import "./Banner.css";
 
 const Banner = () => {
@@ -17,7 +18,7 @@ const Banner = () => {
                 <Carousel.Item>
                   <img
                     className="carousal-img d-block w-100"
-                    src={Banner1}
+                    src={Banner5}
                     alt="First slide"
                   />
                   <Carousel.Caption>
@@ -55,6 +56,17 @@ const Banner = () => {
 
                   <Carousel.Caption>
                     <h1 className="text-warning">More than 2000 successful implant surgery</h1>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={Banner1}
+                    alt="Fourth slide"
+                  />
+
+                  <Carousel.Caption>
+                    <h1 className="text-warning">More than 2000 successful Wisdom Tooth Surgery</h1>
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
