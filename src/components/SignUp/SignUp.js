@@ -18,8 +18,9 @@ const SignUp = () => {
   const navigate = useNavigate();
   const [lengtherror, setLengthError] =useState('');
 
-  const [createUserWithEmailAndPassword, user] =
-    useCreateUserWithEmailAndPassword(auth);
+  const [createUserWithEmailAndPassword, user, loading] =
+    useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+
   const [signInWithGoogle] = useSignInWithGoogle(auth);
 
   const handleEmailBlur = (event) => {

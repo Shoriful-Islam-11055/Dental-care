@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import {
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -18,6 +19,8 @@ const SignIn = () => {
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
   const [signInWithGoogle] = useSignInWithGoogle(auth);
 
@@ -109,6 +112,15 @@ const SignIn = () => {
             </span>
             Continue with google
           </Button>
+          <Button
+            onClick={async () => {
+              await sendPasswordResetEmail(email);
+              alert("Sent email");
+            }}
+          >
+            Reset password
+          </Button>
+         
         </div>
       </Form>
     </div>
