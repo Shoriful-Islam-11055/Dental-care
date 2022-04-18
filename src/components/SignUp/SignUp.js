@@ -16,6 +16,7 @@ const SignUp = () => {
   const [confrmPass, setConfrmPass] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const [lengtherror, setLengthError] =useState('');
 
   const [createUserWithEmailAndPassword, user] =
     useCreateUserWithEmailAndPassword(auth);
@@ -44,16 +45,17 @@ const SignUp = () => {
       event.preventDefault();
       event.stopPropagation();
     }
-    // if(password !== confrmPass){
-    //   setError('Did not match password');
-    //   return;
-    // }
+    if(password !== confrmPass){
+      setError('Did not match password');
+      event.preventDefault();
+      return;
+    }
 
-    // if(password.length < 5){
-    //   setError('Password must be 6 characters or more!');
-    //   event.preventDefault();
-    //   return;
-    // }
+    if(password.length <= 5){
+      setLengthError('Password must be 6 characters or more!');
+      event.preventDefault();
+      return;
+    }
     createUserWithEmailAndPassword(email, password);
     setValidated(true);
   };
@@ -79,7 +81,6 @@ const SignUp = () => {
             required
             type="email"
             placeholder="Enter email"
-            defaultValue="hello@gmail.com"
           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid email.
@@ -109,6 +110,7 @@ const SignUp = () => {
             placeholder="Confirm password"
           />
           <p style={{ color: "red" }}>{error}</p>
+          <p style={{ color: "red" }}>{lengtherror}</p>
           <Form.Control.Feedback type="invalid">
             Please provide a valid password.
           </Form.Control.Feedback>
